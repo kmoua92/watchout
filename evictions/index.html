@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='./styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <title>SF Evictions</title>
+  </head>
+  <body>
+    <div class="scoreboard">
+      
+    </div>
+    <div class="board">
+      <div class="mouse"></div>
+      <svg style="height: 100%; width: 100%" viewPort="0 0 600 400">
+        <line x1="20" y1="0" x2="20" y2="380" stroke-width="4" stroke="black" stroke-linecap="round"/>
+        <line x1="20" y1="380" x2="600" y2="380" stroke-width="4" stroke="black" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <script src="./sf_eviction.json"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-transition.v1.min.js"></script>
+    <script src="https://d3js.org/d3-drag.v1.min.js"></script>
+    <script src="eviction.js"></script>
+  </body>
+</html>
