@@ -3,3 +3,20 @@
 /* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
 
+* {
+  font-family: 'Orbitron', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.board {
+  height: 500px;
+  width: 500px;
+}
+

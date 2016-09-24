@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='stylesheet' type='css' href='styles.css'>
+    <link rel='stylesheet' href='./styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <title>Watch Out!</title>
   </head>
   <body>
     <div class="scoreboard">
       <!-- Modify the scoreboard when important events occur in your game! -->
-      <div class="highscore">High score: <span>0</span></div>
-      <div class="current">Current score: <span>0</span></div>
-      <div class="collisions">Collisions: <span>0</span></div>
+      <div class="highscore">High score: <span id="high-score">0</span></div>
+      <div class="current">Current score: <span id="current-score">0</span></div>
     </div>
-    <div class="board"><div class="mouse"></div></div>
-    <script src="lib/d3.js" charset="utf-8"></script>
+    <div class="board">
+      <div class="mouse"></div>
+      <svg style="height: 100%; width: 100%">
+        <rect x="10" y="10" width="50" height="50" rx="25" ry="25"/>  
+        <filter id="this_image" x="0%" y="0%" width="100%" height="100%">
+          <feImage xlink:href="./asteroid.png"/>
+        </filter>
+      </svg>
+    </div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-transition.v1.min.js"></script>
+    <script src="https://d3js.org/d3-drag.v1.min.js"></script>
     <script src='watchout.js'></script>
   </body>
 </html>
